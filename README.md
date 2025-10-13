@@ -42,7 +42,7 @@ Designen har testats i olika upplösningar med **Chrome DevTools** samt manuellt
     - Google Chrome
     - Firefox
     - Microsoft Edge
-    - *Browserify* (för att simulera Safari)
+    - *Browserling* (för att simulera Safari)
 
 ---
 
