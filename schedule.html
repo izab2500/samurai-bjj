@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samurai bjj | Schema</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="header-container">
+        <!--För att gömma eller visa nav och respektive ikon för mindre skrämar-->
+        <input type="checkbox" id="nav-toggle-smaller-screens" hidden>
+
+        <div class="hamburger-close-logo-container">
+            <label for="nav-toggle-smaller-screens">
+                <!--Ikoner för mindre skrärmar-->
+                <span class="hamburger">&#9776;</span>
+                <span class="close">&times;</span>
+            </label>
+            <h1 class="logo">Samurai bjj</h1>
+        </div>
+
+        <nav class="nav-container">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="about.html">Om</a></li>
+                <li><a href="prices.html">Priser</a></li>
+                <li><a href="schedule.html" class="current-page">Schema</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main-container">
+
+        <!--Hero-->
+        <section class="hero-container">
+            <div class="hero-img-container">
+                <img src="/images/woman-chokes-man-in-bjj.webp"
+                    alt="En kvinna stryper ut en man in brasiliansk jiu-jitsu">
+            </div>
+            <div class="hero-text-container">
+                <h2 class="hero-heading">Citat från känd bjj-utövare</h2>
+                <blockquote class="hero-p">
+                    "Jiu-Jitsu is not about being better than someone else,
+                    it's about being better than you used to be."<br>
+                    <cite>Saulo Ribeiro</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!--Schema-->
+        <table id="table">
+            <caption>Träningsschema</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Tid</th>
+                    <th scope="col">06:00 - 07:00</th>
+                    <th scope="col">16:00 - 17:00</th>
+                    <th scope="col">18:00 - 19:30</th>
+                    <th scope="col">20:00 - 21:30</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row" class="color-day">Mån</th>
+                    <td class="td-color-pink">Sparring</td>
+                    <td></td>
+                    <td class="td-color-gold">Avancerad</td>
+                    <td class="td-color-silver">Nybörjare</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="color-day">Tis</th>
+                    <td></td>
+                    <td class="td-color-orange">Fyspass</td>
+                    <td class="td-color-gold">Avancerad</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="color-day">Ons</th>
+                    <td class="td-color-pink">Sparring</td>
+                    <td></td>
+                    <td class="td-color-gold">Avancerad</td>
+                    <td class="td-color-silver">Nybörjare</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="color-day">Tors</th>
+                    <td></td>
+                    <td></td>
+                    <td class="td-color-gold">Avancerad</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="color-day">Fre</th>
+                    <td class="td-color-pink">Sparring</td>
+                    <td class="td-color-orange">Fyspass</td>
+                    <td class="td-color-gold">Avancerad</td>
+                    <td class="td-color-silver">Nybörjare</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="color-day">Lör</th>
+                    <td></td>
+                    <td class="td-color-cyan">Open mat</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="color-day">Sön</th>
+                    <td></td>
+                    <td class="td-color-orange">Fyspass</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+
+    <footer class="footer-container">
+        <div>
+            <h2 class="footer-heading">Rättigheter</h2>
+            <p class="footer-text footer-text-flex"><span>&copy; 2025 Samurai bjj</span> <span>Alla rättigheter
+                    reserverade.</span> </p>
+        </div>
+        <address>
+            <p class="footer-heading">Kontakt</p>
+            <p class="footer-text">
+                Samurai bjj, vägen 1, staden
+            </p>
+            <p class="footer-text">
+                <strong>Telefon:</strong> <a href="tel:+46701234567">070-123 45 67</a>
+            </p>
+            <p class="footer-text">
+                <strong>E-post:</strong> <a href="mailto:info@samuraibjj.se">info@samuraibjj.se</a>
+            </p>
+        </address>
+        <div>
+            <h2 class="footer-heading">Länkar</h2>
+            <ul>
+                <li class="footer-text">
+                    <a href="schedule.html" class="current-page">Schema</a>
+                </li>
+                <li class="footer-text">
+                    <a href="contact.html">Kontakt</a>
+                </li>
+                <li class="footer-text">
+                    <a href="privacy.html">Integritetspolicy</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

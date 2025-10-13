@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samurai bjj | Kontakt</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="header-container">
+        <!--För att gömma eller visa nav och respektive ikon för mindre skrämar-->
+        <input type="checkbox" id="nav-toggle-smaller-screens" hidden>
+
+        <div class="hamburger-close-logo-container">
+            <label for="nav-toggle-smaller-screens">
+                <!--Ikoner för mindre skrärmar-->
+                <span class="hamburger">&#9776;</span>
+                <span class="close">&times;</span>
+            </label>
+            <h1 class="logo">Samurai bjj</h1>
+        </div>
+
+        <nav class="nav-container">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="about.html">Om</a></li>
+                <li><a href="prices.html">Priser</a></li>
+                <li><a href="schedule.html">Schema</a></li>
+                <li><a href="contact.html" class="current-page">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main-container">
+
+        <!--Form-->
+        <form action="#">
+            <section>
+                <h2 class="heading">kontakta oss</h2>
+                <p>Anmäl ditt intresse för att börja träna eller ställ en fråga.</p>
+                <p><strong>Vi svarar inom 48 timmar.</strong></p>
+            </section>
+
+            <section>
+                <h2 class="heading">Info</h2>
+                <div>
+                    <label for="name">Namn</label>
+                    <input autofocus type="text" id="name" name="name" placeholder="Skriv ditt namn..." required>
+                </div>
+
+                <div>
+                    <label for="email">E-post</label>
+                    <input type="email" id="email" name="email" placeholder="Skriv din e-post..." required>
+                </div>
+
+                <div>
+                    <label for="message">Meddelande</label>
+                    <textarea rows="4" name="message" id="message" placeholder="Skriv ditt meddelande..."
+                        required></textarea>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="consent" name="consent"> <label for="consent">Jag godkänner att mina
+                        uppgifter hanteras enligt integritetspolicyn</label>
+                </div>
+                <a href="privacy.html">Klicka för att läsa integritetspolicyn</a>
+                <button type="submit" disabled>Skicka</button>
+            </section>
+        </form>
+
+    </main>
+
+
+    <footer class="footer-container">
+        <div>
+            <h2 class="footer-heading">Rättigheter</h2>
+            <p class="footer-text footer-text-flex"><span>&copy; 2025 Samurai bjj</span> <span>Alla rättigheter
+                    reserverade.</span> </p>
+        </div>
+        <address>
+            <p class="footer-heading">Kontakt</p>
+            <p class="footer-text">
+                Samurai bjj, vägen 1, staden
+            </p>
+            <p class="footer-text">
+                <strong>Telefon:</strong> <a href="tel:+46701234567">070-123 45 67</a>
+            </p>
+            <p class="footer-text">
+                <strong>E-post:</strong> <a href="mailto:info@samuraibjj.se">info@samuraibjj.se</a>
+            </p>
+        </address>
+        <div>
+            <h2 class="footer-heading">Länkar</h2>
+            <ul>
+                <li class="footer-text">
+                    <a href="schedule.html">Schema</a>
+                </li>
+                <li class="footer-text">
+                    <a href="contact.html" class="current-page">Kontakt</a>
+                </li>
+                <li class="footer-text">
+                    <a href="privacy.html">Integritetspolicy</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

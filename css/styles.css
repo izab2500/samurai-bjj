@@ -1,0 +1,711 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: #FFFFE0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+p,
+a {
+    font-size: 1.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+main,
+header,
+footer {
+    padding: 35px;
+}
+
+
+main {
+    flex: 1;
+}
+
+section {
+    border-radius: 12px;
+}
+
+/**header och nav**/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.hamburger-close-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hamburger-close-logo-container>label {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-close-logo-container>label>span {
+    position: absolute;
+}
+
+.hamburger {
+    font-size: 2rem;
+    display: none;
+}
+
+.close {
+    font-size: 3rem;
+    display: none;
+}
+
+.nav-container>ul {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    list-style-type: none;
+}
+
+.nav-container>ul a {
+    transition: color 0.4s ease;
+}
+
+.nav-container>ul a:hover {
+    color: lightcoral;
+}
+
+/**Visar stil för nuvarande sida**/
+.current-page {
+    color: lightcoral;
+    font-weight: bold;
+}
+
+/**Main start**/
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/**Hero**/
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    background-color: black;
+}
+
+.hero-img-container {
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-img-container>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.hero-text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    height: 100%;
+    padding: 25px;
+}
+
+.hero-heading {
+    color: darkorange;
+    font-size: 1.5rem;
+}
+
+.hero-p {
+    color: whitesmoke;
+    font-size: 1.1rem;
+    letter-spacing: 0.15rem;
+    line-height: 33px;
+    max-width: 60ch;
+}
+
+.cta-btn {
+    background-color: darkorange;
+    color: black;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 40%;
+    padding: 22px 6px;
+    text-align: center;
+    transition: background-color 0.4s ease;
+}
+
+.cta-btn:hover {
+    background-color: whitesmoke;
+}
+
+/**Rubrik och text**/
+.heading-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid black;
+}
+
+.p-main-section {
+    max-width: 70ch;
+    letter-spacing: 0.09rem;
+    line-height: 35px;
+}
+
+/**Bild, rubrik och text**/
+.img-heading-text-container {
+    display: flex;
+    border-radius: 12px;
+    border: 1px solid black;
+}
+
+.img-sect-container {
+    height: 100%;
+    flex: 1;
+}
+
+.img-sect-container>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.heading-text-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    flex: 1;
+}
+
+.max-w-p {
+    max-width: 50ch;
+}
+
+/**Utility-klasser**/
+.heading-dark-orange {
+    color: darkorange;
+}
+
+.p-white {
+    color: whitesmoke;
+}
+
+.section-bg-black {
+    background-color: black;
+}
+
+/**Tränare**/
+#trainers-cards-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#trainers-cards-container ul {
+    list-style-type: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 15px 0;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.circle>img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 50%;
+}
+
+/**Priser**/
+#prices-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+}
+
+.price-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.price-text {
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    padding: 0;
+}
+
+.price-text-color-bronze {
+    color: #CD7F32;
+}
+
+.price-text-color-silver {
+    color: #C0C0C0;
+}
+
+.price-text-color-gold {
+    color: #FFD700;
+}
+
+.price-h2-margin {
+    margin-bottom: 12px;
+}
+
+.include-h3 {
+    color: whitesmoke;
+    margin-bottom: 22px;
+}
+
+.list-text {
+    color: whitesmoke;
+    list-style-type: circle;
+}
+
+/**Schema**/
+table {
+    border-collapse: collapse;
+    background-color: black;
+    width: 100%;
+}
+
+caption {
+    font-size: 1.8rem;
+    letter-spacing: 0.18rem;
+    margin-bottom: 20px;
+}
+
+th,
+.td-time {
+    color: whitesmoke;
+}
+
+th,
+td {
+    border: 1px solid darkgrey;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.td-color-pink {
+    color: pink;
+}
+
+.td-color-orange {
+    color: orange;
+}
+
+.td-color-cyan {
+    color: lightcyan;
+}
+
+.td-color-gold {
+    color: gold;
+}
+
+.td-color-silver {
+    color: silver;
+}
+
+.color-day {
+    color: lightgreen;
+}
+
+/**Kontakt**/
+
+/**Form**/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 100%;
+    padding: 35px;
+}
+
+form h2 {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+form p {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    letter-spacing: 0.09rem;
+}
+
+form>section {
+    width: 100%;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+form>section:last-child>div:nth-of-type(4)>label {
+    display: inline-block;
+}
+
+form>section:last-child>div:nth-of-type(4) {
+    display: flex;
+    align-items: center;
+    justify-items: start;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+form>section:last-child>div:nth-of-type(4) label {
+    margin-top: 5px;
+}
+
+form input,
+textarea {
+    padding: 10px 5px;
+    border: 1px solid black;
+}
+
+form input[type=text],
+input[type=email],
+textarea {
+    margin-bottom: 30px;
+}
+
+form div,
+input[type=text],
+input[type=email],
+textarea,
+button {
+    width: 100%;
+}
+
+form input[type=checkbox] {
+    height: 20px;
+    width: 20px;
+    accent-color: black;
+}
+
+form textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+form a {
+    color: blue;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    margin: 0;
+    position: relative;
+    bottom: 20px;
+}
+
+form button {
+    padding: 15px;
+    cursor: not-allowed;
+    border-radius: 12px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/**Privacy**/
+.privacy-main-heading {
+    border-bottom: 1px solid darkgrey;
+    padding-bottom: 3px;
+}
+
+
+.main-center>section {
+    max-width:900px;
+    width:100%;
+}
+
+.main-center {
+    align-items: center;
+    flex:1;
+}
+
+.h3-margin-bottom {
+    margin-bottom: 12px;
+}
+
+.list-privacy {
+    color: black;
+    font-size: 1.2rem;
+}
+
+/**Main slut**/
+
+
+/**Footer**/
+.footer-container {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-text-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-container>address {
+    justify-self: center;
+}
+
+.footer-container>div:last-child {
+    justify-self: end;
+}
+
+.footer-container h2,
+p,
+ul>li {
+    margin-bottom: 16px;
+}
+
+.footer-heading {
+    color: goldenrod;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.footer-text {
+    color: white;
+    font-size: 1rem;
+}
+
+.footer-container ul {
+    list-style-type: none;
+}
+
+/**Media queries**/
+
+@media (max-width:490px) {
+
+    table,
+    form h2,
+    p,
+    button {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:900px) {
+
+    /**Header och nav**/
+    header {
+        position: relative;
+    }
+
+    .nav-container {
+        width: 40%;
+        background-color: black;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 100;
+        transition: transform 0.4s ease;
+        transform: translateX(-100%)
+    }
+
+    .nav-container>ul {
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+        padding: 25px 0;
+    }
+
+    .nav-container>ul>li {
+        margin-left: 25px;
+    }
+
+    /**Visa hamburger- eller close icon beroende på checkboxens tillstånd**/
+    #nav-toggle-smaller-screens:not(:checked)+.hamburger-close-logo-container .hamburger {
+        display: block;
+    }
+
+    #nav-toggle-smaller-screens:checked+.hamburger-close-logo-container .close {
+        display: block;
+    }
+
+    /**Slida navbaren till utgångsläget så att den blir synlig**/
+    #nav-toggle-smaller-screens:checked~.nav-container {
+        transform: translateX(0);
+    }
+
+    /**Main**/
+
+    /**Footer**/
+    .footer-container>address,
+    .footer-container>div:last-child {
+        justify-self: unset;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 30px;
+    }
+
+    .footer-container>address,
+    div {
+        width: 250px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width:980px) {
+
+    main,
+    header,
+    footer {
+        padding: 20px;
+    }
+
+    .heading-text-container,
+    .img-heading-text-container,
+    .hero-container,
+    .img-heading-text-container img {
+        border-radius: 0;
+    }
+
+    /**Hero**/
+    .hero-container {
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 25px;
+        border-radius: 0;
+    }
+
+    .hero-img-container>img {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .hero-text-container {
+        width: 100%;
+    }
+
+    .cta-btn {
+        width: 70%;
+    }
+
+    /**Main**/
+    /**Bild, rubrik och text**/
+    .img-heading-text-container {
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .img-sect-container {
+        width: 100%;
+    }
+
+    .heading-text-main-container {
+        width: 100%;
+    }
+
+    /**Tränare**/
+    #trainers-cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .circle,
+    .circle>img {
+        border-radius: 0;
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+
+    }
+
+    /**Priser**/
+    #prices-container {
+        grid-template-columns: 1fr;
+    }
+
+}
