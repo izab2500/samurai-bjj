@@ -645,7 +645,7 @@ ul>li {
     .heading-text-container,
     .img-heading-text-container,
     .hero-container,
-    .img-heading-text-container img {
+    .img-heading-text-container img, .price-card-container {
         border-radius: 0;
     }
 
